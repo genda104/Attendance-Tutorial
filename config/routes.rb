@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
-  get 'session/new'
+  get 'sessions/new'
 
   root 'static_pages#top'     # topページはこのアプリケーションの初期ページとなるのでroot設定にする
   get '/signup', to: 'users#new'
   
   #ログイン機能
-  get '/login', to: 'session#new'
-  post '/login', to: 'session#create'
-  delete '/logout', to: 'session#destroy' 
+  get '/login', to: 'sessions#new'
+  post '/login', to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy' 
   
   resources :users
 end
