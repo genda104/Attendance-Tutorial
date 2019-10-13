@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails',        '~> 5.1.6'
+gem 'rails-i18n'                #国際化対応（日本語化）
 gem 'bcrypt'                    #passwordをハッシュ化する
 gem 'faker'
 gem 'bootstrap-sass'
